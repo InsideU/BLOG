@@ -8,6 +8,7 @@
 
 <?php
 session_start();
+require_once('./lib.php');
 // define variables and set to empty values
 $name = $pass = "";
 
@@ -19,12 +20,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header("Location:adminpanel.php");
 }
 
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
 ?>
 
 
