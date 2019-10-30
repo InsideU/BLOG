@@ -19,6 +19,7 @@
 </html>
 <?php
 include_once('../connection.php');
+require_once('./lib.php');
 session_start();
 // define variables and set to empty values
 $title = $content = "";
@@ -34,8 +35,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 }
 
-function test_input($data) {
-  return $data;
-}
 session_destroy();
 ?>
