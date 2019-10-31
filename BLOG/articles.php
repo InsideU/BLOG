@@ -10,12 +10,12 @@ if ($result->num_rows > 0) {
     
     
 } else {
-    echo "0 results";
+    error_reporting(E_WARNING);
 }
 ?>
 <html>
 <head>
-<title> PERSONAL BLOG</title>
+<title> PERSONAL BLOG SYSTEM</title>
 <link rel="stylesheet" href="style.css"/>
 
 </head>
